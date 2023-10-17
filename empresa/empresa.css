@@ -1,0 +1,82 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "section section aside"
+    "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+div{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+header {
+    grid-area: header;
+    background-color: #222529;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #222529;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    grid-area: section;
+    background-color: white;
+    font-size: 18px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #222529;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+article {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilos adicionais para fins de ilustração */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.col {
+    padding: 4em;
+    text-align: center;
+    color: black;
+}
